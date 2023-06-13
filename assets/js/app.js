@@ -9,11 +9,8 @@ $(document).ready(function () {
         var scroll = $(window).scrollTop();
         var navbar = $(".navbar");
 
-        if (scroll > 50) {
-            navbar.addClass("sticky");
-        } else {
-            navbar.removeClass("sticky");
-        }
+        (scroll > 50)? navbar.addClass("sticky"): navbar.removeClass("sticky");
+       
     });
 
 });
