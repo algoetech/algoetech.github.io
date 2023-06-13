@@ -1,0 +1,115 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --algo-white: #ffffff;
+  --algo-grey: rgb(172, 172, 172);
+  --algo-black: #101016;
+  --algo-red: #d4311c;
+  --algo-blue: #054097;
+
+  /* alphs and beta */
+  --algo-alpha-blue: #48a1e6;
+  --algo-beta-blue: #013e6d;
+  --algo-alpha-red: #ff5252;
+  --algo-beta-red: #992222;
+  --algo-beta-com: rgb(255, 171, 107);
+
+  /* triadic family of blue */
+  --algo-blue-triadic-up: #78cc0c;
+  --algo-blue-triadic-down: #88dc1c;
+
+  /*  tetradic family of blue. */
+  --algo-blue-triadic-a: #5aaeef;
+  --algo-blue-triadic-b: #b40848;
+  --algo-blue-triadic-c: #0e62a2;
+  /* alphas and beta */
+
+  /* the gray family */
+  --algo-gray-100: hsl(0, 0%, 90%);
+  --algo-gray-600: hsl(200, 15%, 90%);
+  --algo-gray-200: hsl(0, 0%, 80%);
+  --algo-gray-700: hsl(200, 10%, 80%);
+  --algo-gray-300: hsl(0, 0%, 70%);
+  --algo-gray-800: hsl(189, 5%, 70%);
+  --algo-gray-400: hsl(0, 0%, 60%);
+  --algo-gray-900: hsl(200, 1%, 60%);
+  --algo-gray-500: hsl(0, 0%, 50%);
+
+  /* the gray family */
+
+  --algo-white-trans: #ffffff65;
+  --algo-black-trans: #10101665;
+}
+
+/* backgrounds */
+.bg-red {
+  background-color: var(--algo-red);
+}
+.bg-blue {
+  background-color: var(--algo-blue);
+}
+.bg-blue-alpha {
+  background-color: var(--algo-alpha-blue);
+}
+.bg-beta-blue {
+  background-color: var(--algo-beta-blue);
+  color: var(--algo-gray-600);
+}
+.bg-beta-blue * {
+  color: var(--algo-gray-600);
+}
+.bg-blue-tetra-red {
+  background-color: var(--algo-blue-triadic-b);
+}
+/* ends backs */
+
+.ribbon {
+  line-height: 1;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+.no-wrap {
+  flex-wrap: nowrap;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: var(--algo-blue-triadic-c) !important;
+  font-weight: 600;
+}
+.social-links > a:hover,
+.social-links > a:hover * {
+  color: var(--algo-blue) !important;
+  transform: scale(110%);
+}
+/* forever transiltion */
+.social-links > a,
+.social-links > a:hover,
+.social-links > a:hover *,
+.social-links > a * {
+  transition: 0.7s all ease-out 0.2s;
+}
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.carousel-item {
+  height: 48rem;
+}
+.carousel-item .img-fluid {
+  height: fit-content;
+}
+.page-footer a{
+    text-decoration: none;
+
+}
+.page-footer a:hover {
+    color: var(--algo-blue-triadic-b);
+}
+.page-footer h6 a {
+    font-weight: 600;
+}

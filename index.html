@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+
+    <title id="pageTitle"></title>
+
+    <link
+      rel="canonical"
+      href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/second.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="vh-100 d-none m-0">
+    <!-- content -->
+    <section
+      class="d-sm-none d-md-block d-lg-block top-ribbon 10vh p-0 m-0 position-relative overflow-hidden"
+    >
+      <div class="ribbon vw-100 bg-blue-tetra-red">
+        <div class="container-lg container-fluid">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-arround">
+              <div class="col-7">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a
+                      href="mailto:algoetech@yahoo.com"
+                      class="mx-2 no-wrap nav-link text-white"
+                    >
+                      <i class="fas fa-envelope fa-fw"></i>
+                      algoetech@yahoo.com
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="tel:0713295803"
+                      class="mx-2 no-wrap nav-link text-white"
+                    >
+                      <i class="fas fa-phone fa-fw"></i>
+                      +255 713 295 803
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="col-5 d-flex justify-content-end align-items-center social-links"
+              >
+                <a href="">
+                  <i class="fab fa-github fa-fw mx-1 text-white"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-twitter fa-fw mx-1 text-white"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-youtube fa-fw mx-1 text-white"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-linkedin fa-fw mx-1 text-white"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /ends of contents -->
+
+    <!-- top navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light shadow bg-white sticky-top"
+    >
+      <div class="container-fluid pt-2 py-1">
+        <a class="navbar-brand ps-lg-3" href="#">
+          <!-- logo -->
+          <img class="img-fluid" src="" alt="{{ print('Logo') }}" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse container-lg ps-lg-5"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item px-lg-3">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item px-lg-3">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item px-lg-3">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item px-lg-3">
+              <a class="nav-link" href="#">Portifolio</a>
+            </li>
+            <li class="nav-item px-lg-3">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /ends of top nav -->
+
+    <!-- main -->
+
+    <main>
+      <div id="myCarousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#slider-1" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#slider-2" data-bs-slide-to="1"></li>
+          <li data-bs-target="#slider-3" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="slider-1">
+            <img class="img-fluid" src="assets/images/asus-rog.jpg" alt="">
+
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Example headline.</h1>
+                <p>
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                  Donec id elit non mi porta gravida at eget metus. Nullam id
+                  dolor id nibh ultricies vehicula ut id elit.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#" role="button"
+                    >Sign up today</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" id="slider-2">
+            <img class="img-fluid" src="assets/images/huawei-matebook.jpg" alt="">
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                  Donec id elit non mi porta gravida at eget metus. Nullam id
+                  dolor id nibh ultricies vehicula ut id elit.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#" role="button"
+                    >Learn more</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" id="slider-3">
+            <img class="img-fluid" src="assets/images/super-lap.jpg" alt="">
+
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>One more for good measure.</h1>
+                <p>
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                  Donec id elit non mi porta gravida at eget metus. Nullam id
+                  dolor id nibh ultricies vehicula ut id elit.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#" role="button"
+                    >Browse gallery</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#myCarousel"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#myCarousel"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing pb-3">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="Placeholder: 140x140"
+              preserveAspectRatio="xMidYMid slice"
+              role="img"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777" />
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            </svg>
+
+            <h2>Heading</h2>
+            <p>
+              Donec sed odio dui. Etiam porta sem malesuada magna mollis
+              euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
+              Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+              Praesent commodo cursus magna.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#" role="button"
+                >View details &raquo;</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="Placeholder: 140x140"
+              preserveAspectRatio="xMidYMid slice"
+              role="img"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777" />
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            </svg>
+
+            <h2>Heading</h2>
+            <p>
+              Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+              eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
+              amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor
+              mauris condimentum nibh.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#" role="button"
+                >View details &raquo;</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="Placeholder: 140x140"
+              preserveAspectRatio="xMidYMid slice"
+              role="img"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777" />
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            </svg>
+
+            <h2>Heading</h2>
+            <p>
+              Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+              egestas eget quam. Vestibulum id ligula porta felis euismod
+              semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+              condimentum nibh, ut fermentum massa justo sit amet risus.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#" role="button"
+                >View details &raquo;</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">
+              First featurette heading.
+              <span class="text-muted">It’ll blow your mind.</span>
+            </h2>
+            <p class="lead">
+              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+              ligula porta felis euismod semper. Praesent commodo cursus magna,
+              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+              commodo.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              height="500"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="Placeholder: 500x500"
+              preserveAspectRatio="xMidYMid slice"
+              role="img"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee" />
+              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+            </svg>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">
+              Oh yeah, it’s that good.
+              <span class="text-muted">See for yourself.</span>
+            </h2>
+            <p class="lead">
+              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+              ligula porta felis euismod semper. Praesent commodo cursus magna,
+              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+              commodo.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              height="500"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="Placeholder: 500x500"
+              preserveAspectRatio="xMidYMid slice"
+              role="img"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee" />
+              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+            </svg>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">
+              And lastly, this one. <span class="text-muted">Checkmate.</span>
+            </h2>
+            <p class="lead">
+              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+              ligula porta felis euismod semper. Praesent commodo cursus magna,
+              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+              commodo.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              height="500"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="Placeholder: 500x500"
+              preserveAspectRatio="xMidYMid slice"
+              role="img"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee" />
+              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- /END THE FEATURETTES -->
+      </div>
+      <!-- /.container -->
+    </main>
+
+    <!-- ends main-->
+
+    <!-- footer -->
+    <footer class="page-footer font-small bg-beta-blue text-decoration-none">
+      <!-- Footer Links -->
+      <div class="container">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold text-decoration-none">
+              <a href="#!">About us</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Products</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Awards</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Help</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 mb-3">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!">Contact</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <hr class="rgba-white-light" style="margin: 0 15%" />
+
+        <!-- Grid row-->
+        <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+          <!-- Grid column -->
+          <div class="col-md-8 col-12 mt-5">
+            <p style="line-height: 1.7rem">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur.
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <hr
+          class="clearfix d-md-none rgba-white-light"
+          style="margin: 10% 15% 5%"
+        />
+
+        <!-- Grid row-->
+        <div class="row pb-3">
+          <!-- Grid column -->
+          <div class="col-md-12">
+            <div class="mb-5 flex-center">
+              
+              <!-- Github -->
+              <a class="fb-ic">
+                <i class="fab fa-github fa-lg white-text mr-4"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+              </a>
+              <!-- Google -->
+              <a class="gplus-ic">
+                <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+              </a>
+              
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-4 bg-dark text-info">
+        &copy; 2023 Copyright:
+        <a href="https://algoetech.github.io/">Algo-e Tech</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- ends footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
