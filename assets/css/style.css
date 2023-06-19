@@ -1,3 +1,33 @@
+@font-face {
+  font-family: titillium;
+  src: url(../fonts/titillium-regular.woff);
+}
+
+@font-face {
+  font-family: Arima;
+  src: url(../fonts/Arima-Koshi-Regular.ttf.woff);
+}
+
+@font-face {
+  font-family: ubuntu;
+  src: url(../fonts/ubuntucondensed-regular.woff);
+}
+
+@font-face {
+  font-family: Aneliza;
+  src: url(../fonts/Aneliza-SemiBold.ttf.woff);
+}
+
+@font-face {
+  font-family: Anna;
+  src: url(../fonts/Anna.ttf.woff);
+}
+
+@font-face {
+  font-family: Serati;
+  src: url(../fonts/Montserrat-Regular.woff);
+}
+
 *,
 ::before,
 ::after {
@@ -45,6 +75,49 @@
   --algo-black-trans: #10101665;
 }
 
+
+/* fonts */
+.bira {
+  font-family: "bira" !important;
+}
+
+.serati {
+  font-family: "Serati", sans-serif;
+}
+
+.titillium {
+  font-family: "titillium" !important;
+}
+
+.aneliza {
+  font-family: "Aneliza", sans-serif;
+}
+
+.arima {
+  font-family: "Arima", sans-serif;
+}
+
+.anna {
+  font-family: "Anna", sans-serif, Arial, Verdana, "Trebuchet MS" !important;
+}
+
+.ubuntu {
+  font-family: "ubuntu", sans-serif, Arial, Verdana, "Trebuchet MS" !important;
+}
+
+.capitalized {
+  text-transform: capitalize !important;
+}
+
+.fa-large {
+  font-size: 16px;
+}
+
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+/* fonts */
 /* backgrounds */
 .bg-red {
   background-color: var(--algo-red);
@@ -98,11 +171,24 @@
   width: 100%;
   z-index: 9999;
 }
-.carousel-item {
-  height: 48rem;
+@media (min-width:992px){
+  .carousel-item {
+    height: 48rem;
+  }
+}
+
+@media (max-width:768px) {
+  .carousel-item {
+    height: 40rem;
+  }
+}
+@media (max-width:540px) {
+  .carousel-item {
+    height: 32rem;
+  }
 }
 .carousel-item .img-fluid {
-  height: fit-content;
+  height: 100%;
 }
 .page-footer a{
     text-decoration: none;
